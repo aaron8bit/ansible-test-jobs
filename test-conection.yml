@@ -1,0 +1,8 @@
+---
+- name: Test Connection
+  hosts: all
+ 
+  tasks:
+ 
+  - name: Test Connection to {{ inventory_hostname}}
+    shell: echo "Test task successfully executed on {{ inventory_hostname }}"
